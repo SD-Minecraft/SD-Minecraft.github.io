@@ -1,101 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SD Minecraft</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sdminecraft.net</title>
-    <link href="style.css?v=2024.08.18.0" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/png" href="media/sdlogo.png?v=2024.08.18.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-<body>
-<div id="main-container">
+	<!--
+		Disabling caching. This should avoid any file versioning problems.
+		Caching shouldn't be particularly important for this site.
+	-->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
 
-<script>
-function Copy() {
-    navigator.clipboard.writeText("play.sdminecraft.net");
-    document.getElementById("copytext").innerText="Copied!";
+	</head>
+	<body class="is-preload">
 
-    setTimeout(() => {
-        document.getElementById("copytext").innerText="Copy IP Address";
-    }, "2500");
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#join">Before You Join</a></li>
+							<li><a href="#thanks">Special Thanks</a></li>
+							<li><a href="#socials">Get in Touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-}
-</script>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<!-- <div id="header">sdminecraft.net</div> -->
- <img src="media/header_polished.png" alt="sdminecraft.net" id="header">
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>SD Minecraft</h1>
+							<p>Welcome to the South Dakota Mines and Rapid City Minecraft Recreation Project!</p>
+							<ul class="actions">
+								<li>
+									<button class="button primary solid ip glow-on-hover" onclick="Copy()">
+										<span class="icon fa-copy"></span>
+										<span id="copytext">Copy IP Address</span>
+									</button>
+								</li>
+								<li><a href="Connection Guide.pdf" class="button icon solid fa-download">Connection Guide</a></li>
+								<li><a target="_blank" href="https://discord.com/invite/bp6p4XmdKs" class="button icon brands fa-discord">Join our Discord</a></li>
+							</ul>
+						</div>
+					</section>
 
-<div id="copydiv">
+				<!-- Before you Join -->
+					<section id="join" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Before You Join</h2>
+							<p>Here are our server rules. Please (please) don't do anything that would make us want to add another one.</p>
+							<div class="features">
 
-    <div><span style="font-size: 32px; font-family: 'open sans';">play.sdminecraft.net</span></div>
+								<section>
+									<span class="icon solid major fa-heart"></span>
+									<h3>Feel Free to Help</h3>
+									<p>If you'd like to contribute, we need all the help we can get. Every block counts!</p>
+								</section>
 
-    <div><button id="copybutton" class="wobble" onclick='Copy()'>
-        <div style="text-align: left; display: inline-block;">    <img src="media/copy_icon.png?v=2024.08.18.0" alt="Copy Icon" style="width: 20px;">    </div>
-        <span id="copytext">Copy IP Address</span>
-    </button></div>
-    
-</div>
-<div id="mainflex"> <!-- main flex start -->
+								<section>
+									<span class="icon solid major fa-ban"></span>
+									<h3>Treat Others with Respect</h3>
+									<p>Please be kind; any kind of hateful or offensive conduct will not be tolerated.</p>
+								</section>
 
-<div class="block" style="flex-basis: 70%;"> <!-- intro block start -->
-<h1>Welcome to the Minecraft recreation project of South Dakota Mines and Rapid City!</h1>
-<p style="margin: auto; padding: 15px 5px;">Feel free to join the world and look around or help build; the server is available on both Java and Bedrock. Have fun and enjoy our hard work! </p>
-</div> <!-- intro block end -->
+								<section>
+									<span class="icon solid major fa-fire"></span>
+									<h3>Treat the Project with Respect</h3>
+									<p>Do not intentionally disrupt or otherwise cause harm to the build.</p>
+								</section>
 
-<div id="sideflex" style="flex-basis: 40%;"> <!-- side block start -->
-<div class="block" style="flex-basis: 50%;"> <!-- help block start -->
-<h1>Need some help?</h1>
-<p>Download our <a href="media/Connection_Guide_10_01_2024.pdf">connection guide</a>!</p>
-</div> <!-- help block end -->
-<div class="block" style="flex-basis: 50%;"> <!-- socials block start -->
-    <h1>Socials</h1>
-    <a href="https://discord.gg/bp6p4XmdKs">Discord</a>
-    <a href="https://www.instagram.com/_sdminecraft.net_/">Instagram</a>
-    <a href="https://www.facebook.com/profile.php?id=61563910984923">Facebook</a>
-    <a href="mailto:sdakotaminecraft@gmail.com">Email</a>
-    <a href="https://flic.kr/s/aHBqjBDJe3">Flickr</a>
-    </div> <!-- socials block end -->
-</div> <!-- side block end -->
+								<section>
+									<span class="icon solid major fa-star"></span>
+									<h3>You Can Have Fun</h3>
+									<p>You may make unrelated builds as long as they don't interfere with the project.</p>
+								</section>
 
-</div> <!-- main flex end -->
+							</div>
+							<ul class="actions">
+								<li><a href="Connection Guide.pdf" class="button icon solid fa-download">Connection Guide</a></li>
+								<li><p>Need help joining? Feel free to download our connection guide!</p></li>
+							</ul>
+						</div>
+					</section>
 
-<div class="block" style="margin-bottom: 10px;"> <!-- rules block start -->
-<h1>Rules and Guidelines</h1>
-<ul>
-<li>Do not grief or otherwise cause harm to the build.</li>
-<li>Feel free to add more detail or fix things that are incorrect. Don’t be afraid to correct us if something is missing or wrong!</li>
-<li>Feel free to create non-related builds as long as they do not interfere with the main project.</li>
-<li>Please try and keep things tasteful; we want to make sure that this is a good environment for all ages.</li>
-</ul>
-</div> <!-- rules block end -->
+				<!-- Special Thanks -->
+					<section id="thanks" class="wrapper style2">
+						<div class="inner">
+							<h2>Special Thanks</h2>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<h3>Admins</h3>
+									<ul class="alt">
+										<li>JaxxenCheney</li>
+										<li>Tryhrdsnphrd</li>
+										<li>Baameows</li>
+										<li>Lego04</li>
+										<li>Xetranok (Goose)</li>
+										<li>NuggetKiwi</li>
+									</ul>
+									<h3>GIS</h3>
+									<ul class="alt">
+										<li>Stella (dido673)</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-medium">
+									<h3>Builders</h3>
+									<ul class="alt">
+										<li>Coleled</li>
+										<li>LockheedMartini</li>
+										<li>LizardCrimsonn</li>
+										<li>Nathan1100</li>
+										<li>Pops0604</li>
+										<li>ProxEndreeper</li>
+										<li>Piehole314</li>
+										<li>Shayam</li>
+										<li>dedgt</li>
+										<li>ThatAlo</li>
+										<li>UnknownOutlaw</li>
+										<li>ob7n</li>
+										<li>r0nium</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
 
-<div class="block" style="flex-basis: 25%; margin-bottom: 10px;">
-<h1 style="width: 100%;">Special Thanks</h1>
-<div class="thanksbox">
-    <p class="thanks">Coleled</p>
-    <p class="thanks">Lego04</p>
-    <p class="thanks">LockheedMartini</p>
-    <p class="thanks">Nathan1100</p>
-    <p class="thanks">Pops0604</p>
-    <p class="thanks">ProxEndreeper</p>
-    <p class="thanks">Raven</p>
-    <p class="thanks">Shayam_</p>
-    <p class="thanks">Tryhrdsnphrd</p>
-    <p class="thanks">Xetranok</p>
-    <p class="thanks">Goose</p>
-    <p class="thanks">Baameows</p>
-    <p class="thanks">NuggetKiwi</p>
-    <p class="thanks">Many More!</p>
-</div>
+					<!-- Socials -->
+					<section id="socials" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in Touch</h2>
+							<div class="split style1">
 
-</div>
+								<section>
+									<form method="POST" action="https://formspree.io/f/meoknoea">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
 
-</div> <!-- main container end -->
-</body>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:sdakotaminecraft@gmail.com">sdakotaminecraft@gmail.com</a>
+										</li>
+										<li>
+											<h3>Socials</h3>
+											<ul class="icons">
+												<li><a href="https://discord.gg/bp6p4XmdKs" class="icon brands fa-discord">
+													<span class="label">Discord</span></a></li>
+												<li><a href="https://www.facebook.com/profile.php?id=61563910984923" class="icon brands fa-facebook-f">
+													<span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/_sdminecraft.net_/" class="icon brands fa-instagram">
+													<span class="label">Instagram</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
 
-<div class="footer">
-    <p style="font-size: 12px;">This is a non-university material that is neither endorsed nor necessarily reflective of the views of South Dakota Mines. Website design by <a style="font: 12px 'open sans'" href="https://baameows.com">baameows</a>.</p>
-</div>
+				<!-- end body -->
+			</div>
 
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<i class="menu">This is a non-university material that is neither endorsed nor necessarily reflective of the views of South Dakota Mines.</i>
+					<ul class="menu">
+						<li>
+							<li>(Wonderful) Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Customization and Other Stuff: <a href="http://baameows.com">BaaMeows</a></li>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/copy.js"></script>
+
+	</body>
 </html>

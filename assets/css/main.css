@@ -1836,7 +1836,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: rgba(0, 0, 0, 0.15);
+		background-color: rgba(0, 0, 0, .30);
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important; /* default: 0.15 */
 		border-radius: 3em;
@@ -3933,7 +3933,7 @@ input, select, textarea {
 
 /* Intro */
 	#intro {
-		background-image: url("images/intro.webp");
+		background-image: url("images/intro2.webp");
 		background-attachment: fixed;
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -3955,6 +3955,7 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.25em;
+			color: white;
 		}
 
 			@media screen and (max-width: 980px) {

@@ -3933,9 +3933,9 @@ input, select, textarea {
 
 /* Intro */
 	#intro {
-		background-image: url("images/intro2.webp");
+		background-image: url("images/intro3.webp");
 		background-attachment: fixed;
-		background-position: top right;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 100vh;

@@ -3,7 +3,7 @@ function Copy() {
     document.getElementById("copytext").innerText="Copied!";
 
     setTimeout(() => {
-        document.getElementById("copytext").innerText="Copy IP Address";
+        document.getElementById("copytext").innerText="play.sdminecraft.net";
     }, "2500");
 
 }

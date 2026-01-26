@@ -1885,7 +1885,7 @@ input, select, textarea {
 /* ----------------------- SILLINESS START */
 
 		.button.ip {
-			width: 304px; /* this is hardcoded and very silly !!!!! */
+			width: 357px; /* this is hardcoded and very silly !!!!! */
 			max-width: 100%;
 		}
 
@@ -3933,7 +3933,7 @@ input, select, textarea {
 
 /* Intro */
 	#intro {
-		background-image: url("images/intro3.webp");
+		background-image: url("images/dinosau.webp");
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;

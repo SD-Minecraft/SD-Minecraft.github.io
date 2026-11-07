@@ -3973,3 +3973,28 @@ input, select, textarea {
 				}
 
 			}
+/* Intro: map button under the three action buttons */
+.intro-actions {
+	width: fit-content;
+	margin-bottom: 2em;
+}
+
+.intro-actions ul.actions {
+	margin-bottom: 0;
+}
+
+.intro-actions .map-row {
+	margin-top: 1em;
+	text-align: center;
+}
+
+.intro-actions .map-button {
+	width: 400px;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.intro-actions { width: auto; }
+	.intro-actions .map-button { width: 100%; }
+	.intro-actions .map-button.icon:before { margin-left: -0.5rem; }
+}

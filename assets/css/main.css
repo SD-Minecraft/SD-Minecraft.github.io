@@ -1884,11 +1884,6 @@ input, select, textarea {
 
 /* ----------------------- SILLINESS START */
 
-		.button.ip {
-			width: 357px; /* this is hardcoded and very silly !!!!! */
-			max-width: 100%;
-		}
-
 		.glow-on-hover:before {
 			content: '';
 			background: linear-gradient(45deg, #865e3c, #33d17a, #865e3c, #33d17a, #865e3c, #33d17a);
@@ -3973,28 +3968,48 @@ input, select, textarea {
 				}
 
 			}
-/* Intro: map button under the three action buttons */
-.intro-actions {
-	width: fit-content;
-	margin-bottom: 2em;
-}
-
-.intro-actions ul.actions {
-	margin-bottom: 0;
-}
-
-.intro-actions .map-row {
-	margin-top: 1em;
-	text-align: center;
-}
-
-.intro-actions .map-button {
-	width: 400px;
-	max-width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-	.intro-actions { width: auto; }
-	.intro-actions .map-button { width: 100%; }
-	.intro-actions .map-button.icon:before { margin-left: -0.5rem; }
-}
+/* Intro buttons */
+	.intro-actions {
+		width: fit-content;
+		max-width: 100%;
+		margin-bottom: 2em;
+	}
+	
+	.intro-actions ul.actions {
+		margin-bottom: 0;
+	}
+	
+	.intro-actions .map-row {
+		margin-top: 1em;
+		text-align: center;
+	}
+	
+	.intro-actions .map-button {
+		width: 40%;
+	}
+	
+	/* Desktop: three equal-width columns sized by the widest label */
+	@media screen and (min-width: 901px) {
+		.intro-actions ul.actions {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 17em));
+			gap: 1em;
+			margin-left: 0;
+		}
+	
+		.intro-actions ul.actions li {
+			padding: 0;
+		}
+	
+		.intro-actions ul.actions .button {
+			width: 100%;
+			padding: 0 1.25em;
+		}
+	}
+	
+	/* Mobile: the template's stacked layout takes over */
+	@media screen and (max-width: 900px) {
+		.intro-actions { width: auto; }
+		.intro-actions .map-button { width: 100%; }
+		.intro-actions .map-button.icon:before { margin-left: -0.5rem; }
+	}

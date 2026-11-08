@@ -1,0 +1,23 @@
+name: Update background manifest
+on:
+push:
+paths:
+  - 'images/slideshow/**'
+  - '!images/slideshow/manifest.json'
+permissions:
+contents: write
+jobs:
+manifest:
+runs-on: ubuntu-latest
+steps:
+  - uses: actions/checkout@v4
+  - name: Build manifest
+run: |
+  cd images/backgrounds
+  ls | grep -iE '\.(jpe?g|png|webp|avif)$' | sort | jq -R . | jq -s . > manifest.json
+- name: Commit
+run: |
+  git config user.name "github-actions"
+  git config user.email "actions@github.com"
+  git add images/slideshow/manifest.json
+  git diff --cached --quiet || (git commit -m "Update background manifest" && git push)

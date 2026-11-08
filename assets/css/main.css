@@ -3928,12 +3928,8 @@ input, select, textarea {
 
 /* Intro */
 	#intro {
-		background-image: url("images/dinosau.webp");
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		height: 100vh;
+		clip-path: inset(0);   /* clips the oversized blurred layer to the section */
 	}
 
 		#intro h1 {
@@ -4012,4 +4008,27 @@ input, select, textarea {
 		.intro-actions { width: auto; }
 		.intro-actions .map-button { width: 100%; }
 		.intro-actions .map-button.icon:before { margin-left: -0.5rem; }
+	}
+	.intro-bg {
+		position: fixed;
+		inset: -40px;               /* oversized so the blur never fades at the edges */
+		z-index: -1;
+		filter: blur(2px);
+		pointer-events: none;
+	}
+
+	.intro-slide {
+		position: absolute;
+		inset: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0;
+		transition-property: opacity;       /* duration is set by the script */
+		transition-timing-function: ease-in-out;
+		will-change: transform, opacity;
+	}
+	
+	.intro-slide.active {
+		opacity: 1;
 	}
